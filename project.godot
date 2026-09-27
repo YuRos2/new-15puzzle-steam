@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="数字华容道"
+config/description="经典数字推盘游戏的现代独立游戏实现"
+run/main_scene="res://scenes/splash.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[autoload]
+
+EventBus="*res://autoload/event_bus.gd"
+Constants="*res://autoload/constants.gd"
+SaveManager="*res://autoload/save_manager.gd"
+SettingsManager="*res://autoload/settings_manager.gd"
+ThemeManager="*res://autoload/theme_manager.gd"
+AudioManager="*res://autoload/audio_manager.gd"
+StatsManager="*res://autoload/stats_manager.gd"
+AchievementManager="*res://autoload/achievement_manager.gd"
+PuzzleSolver="*res://autoload/puzzle_solver.gd"
+GameSession="*res://autoload/game_session.gd"
+ToastManager="*res://autoload/toast_manager.gd"
+TransitionManager="*res://autoload/transition_manager.tscn"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

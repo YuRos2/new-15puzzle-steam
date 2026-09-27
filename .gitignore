@@ -1,0 +1,32 @@
+# Godot 4 编辑器与导入缓存（自动生成，不应提交）
+.godot/
+/android/
+
+# Godot 导入产物
+.import/
+*.translation
+
+# 导出配置与产物（可能含本地路径 / 签名信息）
+export_presets.cfg
+export.cfg
+build/
+dist/
+*.pck
+*.zip
+
+# .NET / Mono（本项目为纯 GDScript，保留以防后续添加）
+.mono/
+data_*/
+mono_crash.*.json
+
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 本地快捷方式与临时文件
+*.lnk
+*.tmp
+_verify.*
+_probe.*
